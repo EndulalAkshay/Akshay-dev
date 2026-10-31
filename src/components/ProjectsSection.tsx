@@ -24,24 +24,24 @@ const projects = [
     category: "Web",
   },
   {
-    title: "AI Project – Coming Soon",
-    description:
-      "An upcoming AI-powered application focused on intelligent automation and predictive insights.",
-    image: "",
-    tags: ["Python", "Machine Learning", "OpenAI"],
-    github: "#",
-    demo: "#",
-    category: "AI",
+    title: "FarmConnect – Farmer Marketplace",
+  description:
+    "A full-stack MERN marketplace that connects farmers directly with buyers. Farmers can list agricultural products, while customers can browse products, place orders, and purchase fresh produce directly from farmers. Features include JWT authentication, product management, and order tracking.",
+  image: "/farmconnect.png",
+  tags: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
+  github: "https://github.com/EndulalAkshay/FarmConnect",
+  demo: "#",
+  category: "Full Stack",
   },
   {
-    title: "Data Analytics Project – Coming Soon",
-    description:
-      "A data-driven project focused on extracting insights, visualization, and decision-making using real-world datasets.",
-    image: "",
-    tags: ["Python", "Pandas", "Power BI", "SQL"],
-    github: "#",
-    demo: "#",
-    category: "Data",
+    title: "PropVista – Real Estate Property Listing Platform",
+  description:
+    "A responsive real estate platform for browsing houses, apartments, plots, and commercial properties. Features dynamic property search and filtering based on location, price, property type, and BHK configuration. Includes reusable React components, detailed property pages, and wishlist functionality using LocalStorage.",
+  image: "/propvista.png",
+  tags: ["HTML", "CSS", "JavaScript", "React.js", "LocalStorage"],
+  github: "#",
+  demo: "#",
+  category: "Full Stack",
   },
 ];
 
