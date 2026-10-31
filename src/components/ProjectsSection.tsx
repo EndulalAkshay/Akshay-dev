@@ -34,7 +34,7 @@ const projects = [
   category: "Full Stack",
   },
   {
-    title: "PropVista – Real Estate Property Listing Platform",
+    title: "PropVista – Real Estate Property Listing Platform ",
   description:
     "A responsive real estate platform for browsing houses, apartments, plots, and commercial properties. Features dynamic property search and filtering based on location, price, property type, and BHK configuration. Includes reusable React components, detailed property pages, and wishlist functionality using LocalStorage.",
   image: "/propvista.png",
