@@ -78,7 +78,7 @@ const SkillCard = ({
             <motion.div
               className="skill-meter-fill"
               initial={{ width: 0 }}
-              animate={inView ? { width: `${skill.level}%` } : { width: 0 }}
+              animate={inView ? { width: skill.level + "%" } : { width: 0 }}
               transition={{
                 duration: 1.2,
                 delay: index * 0.15 + 0.3,
