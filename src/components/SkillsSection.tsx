@@ -1,4 +1,4 @@
-```tsx
+
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
@@ -68,7 +68,10 @@ const SkillCard = ({
       {category.skills.map((skill) => (
         <div key={skill.name}>
           <div className="flex justify-between text-sm mb-1.5">
-            <span className="text-foreground">{skill.name}</span>
+            <span className="text-foreground">
+              {skill.name}
+            </span>
+
             <span className="text-muted-foreground font-mono text-xs">
               {skill.level}%
             </span>
@@ -78,7 +81,9 @@ const SkillCard = ({
             <motion.div
               className="skill-meter-fill"
               initial={{ width: 0 }}
-             animate={{ width: inView ? skill.level + "%" : "0%" }}
+              animate={{
+                width: inView ? skill.level + "%" : "0%",
+              }}
               transition={{
                 duration: 1.2,
                 delay: index * 0.15 + 0.3,
@@ -94,11 +99,21 @@ const SkillCard = ({
 
 const SkillsSection = () => {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-100px" });
+
+  const inView = useInView(ref, {
+    once: true,
+    margin: "-100px",
+  });
 
   return (
-    <section id="skills" className="section-padding relative" ref={ref}>
+    <section
+      id="skills"
+      className="section-padding relative"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto">
+
+        {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -106,7 +121,8 @@ const SkillsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
-            Technical <span className="text-gradient">Skills</span>
+            Technical{" "}
+            <span className="text-gradient">Skills</span>
           </h2>
 
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -114,6 +130,7 @@ const SkillsSection = () => {
           </p>
         </motion.div>
 
+        {/* Skills Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillCategories.map((cat, i) => (
             <SkillCard
@@ -124,6 +141,7 @@ const SkillsSection = () => {
             />
           ))}
         </div>
+
       </div>
     </section>
   );
