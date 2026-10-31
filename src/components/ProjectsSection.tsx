@@ -31,7 +31,7 @@ const projects = [
     image: "/FarmConnect.png",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
     github: "https://github.com/EndulalAkshay/FarmConnect",
-    demo: "demo: "https://farm-connect-dusky.vercel.app/",",
+    demo: demo: "https://farm-connect-dusky.vercel.app/",
     category: "Full Stack",
   },
   {
